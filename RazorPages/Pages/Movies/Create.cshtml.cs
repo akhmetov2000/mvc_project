@@ -5,15 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using RazorPages.Data;
+using RazorPagesMovie.Data;
+using RazorPagesMovie.Models;
 
-namespace RazorPages.Models
+namespace RazorPagesMovie.Pages.Movies
 {
     public class CreateModel : PageModel
     {
-        private readonly RazorPages.Data.RazorPagesContext _context;
+        private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
 
-        public CreateModel(RazorPages.Data.RazorPagesContext context)
+        public CreateModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
         {
             _context = context;
         }
